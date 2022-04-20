@@ -1,0 +1,138 @@
+.footer {
+  padding: 62px 8.3% 42px;
+  background: #e3dcd0;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.footer-nav {
+  display: flex;
+  flex-flow: row wrap;
+  list-style-type: none;
+  max-width: 800px;
+}
+.footer-nav__item {
+  margin-right: 20px;
+  margin-bottom: 8px;
+}
+.footer-nav__link {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 2px 5px;
+  transition: background-color 0.3s;
+}
+.footer-nav__link:hover,
+.footer-contact:hover {
+  background-color: rgba(61, 74, 98, 0.1);
+  transition: background-color 0.3s;
+}
+div.footer-contact:hover {
+  background-color: rgba(61, 74, 98, 0);
+}
+.footer-center {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.footer-contacts {
+  display: flex;
+}
+.footer-contact {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 5px 5px;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  width: max-content;
+  margin-bottom: 8px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #000000;
+}
+.footer-contact img {
+  margin-right: 13px;
+}
+.footer-contact:link {
+  color: #000;
+}
+.footer-contacts__phone {
+  margin-right: 44px;
+}
+.footer-contacts__time {
+  margin-right: 53px;
+}
+.footer-contact_viber img {
+  margin-right: 6px;
+}
+.footer-contact_viber span {
+  padding-left: 4px;
+}
+.payment {
+  margin-top: 8px;
+}
+.payment-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: right;
+}
+.payment__row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 10px;
+}
+.payment-link {
+  margin-left: 23px;
+}
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.copyright {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  padding-left: 5px;
+}
+.developers {
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #246aaa;
+  text-decoration: none;
+}
+.developers img {
+  margin-left: 7px;
+}
+.footer-politics {
+  display: flex;
+}
+.footer-link {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  margin-right: 50px;
+  border-radius: 5px;
+  padding: 2px 5px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+.footer-link:hover {
+  background-color: rgba(61, 74, 98, 0.1);
+  transition: background-color 0.3s;
+}
+.footer-social__link {
+  display: flex;
+}

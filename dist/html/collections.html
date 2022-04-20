@@ -1,0 +1,1871 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Коллекции</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="../img/favic.png">
+    <link rel="stylesheet" href="../css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/nice-select.css">
+    <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+
+  <body>
+    <header class="header">
+      <div data-open-modal=".catalog-modal" class="btn-catalog js-open-modal">
+        <div class="burger">
+          <span class="burger-item"></span>
+          <span class="burger-item"></span>
+          <span class="burger-item"></span>
+        </div>
+        <div class="btn-catalog__text">Каталог</div>
+      </div>
+      <a href="/" class="header__logo">
+        <img src="../img/logo.svg" alt="" class="header__logo-desktop">
+        <img src="../img/logo-mobile.svg" alt="" class="header__logo-mobile">
+      </a>
+      <nav class="header-nav">
+        <ul class="header-nav__list">
+          <li class="header-nav__item">
+            <div class="header-nav__dropdown">
+              <div class="header-nav__dropdown__btn">
+                <span>Покупателям</span>
+                <img src="../img/icon-arrow-nav.svg" alt="">
+              </div>
+              <div class="header-nav__dropdown-list__wrapper">
+                <ul class="header-nav__dropdown-list">
+                  <li>
+                    <a href="#">Подарочные карты</a>
+                  </li>
+                  <li>
+                    <a href="#">Оплата и доставка</a>
+                  </li>
+                  <li>
+                    <a href="#">Обмен и возврат</a>
+                  </li>
+                  <li>
+                    <a href="#">Специальные предложения</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="header-nav__item">
+            <a href="#" class="header-nav__link"> Сертификаты </a>
+          </li>
+          <li class="header-nav__item">
+            <a href="#" class="header-nav__link"> Рассрочка </a>
+          </li>
+          <li class="header-nav__item">
+            <a href="#" class="header-nav__link"> Контакты </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-box__search">
+        <div class="header-search">
+          <div class="modal modal-search">
+            <div class="overlay"></div>
+            <div class="modal-block">
+              <div class="close-modal"></div>
+              <div class="autocomplete-search scroll">
+                <a href="#" class="autocomplete-search__item">
+                  <div class="autocomplete-search__img">
+                    <img src="../img/card-product3.jpg" alt="">
+                  </div>
+                  <div class="autocomplete-search__box">
+                    <div class="autocomplete-search__name">
+                      Набор бокалов для коньяка 2 шт. 250 мл, бутео, марко,
+                      Охота
+                    </div>
+                    <div class="autocomplete-search__price-box">
+                      <div class="autocomplete-search__price">892,5 ₽</div>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="autocomplete-search__item">
+                  <div class="autocomplete-search__img">
+                    <img src="../img/card-product3.jpg" alt="">
+                  </div>
+                  <div class="autocomplete-search__box">
+                    <div class="autocomplete-search__name">
+                      Набор бокалов для коньяка 2 шт. 250 мл, бутео, марко,
+                      Охота
+                    </div>
+                    <div class="autocomplete-search__price-box">
+                      <div class="autocomplete-search__price">892,5 ₽</div>
+                    </div>
+                  </div>
+                </a>
+                <div class="resalt-search__btn-inner">
+                  <a class="btn-border resalt-search__btn">Показать все</a>
+                </div>
+                <div class="text-empty" style="display: none">
+                  <img src="../img/empty-search-icon.svg" alt="">
+                  <span>Ничего не найдено</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form action="/search/" method="get" class="search-form">
+            <label class="label label-search first-elem">
+              <input type="text" name="search" placeholder="Поиск по товарам" required="" class="input input-search">
+              <span class="clear-input"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm4 11.05l-1.12 1.185L8 9.185l-2.88 3.05L4 11.05 6.88 8 4 4.95l1.12-1.185L8 6.815l2.88-3.05L12 4.95 9.12 8 12 11.05z" fill="#8A8A8A"></path>
+                </svg>
+              </span>
+              <div class="search-icon">
+                <img src="../img/search.svg" alt="">
+              </div>
+            </label>
+          </form>
+          <div data-open-modal=".modal-search" class="header-search__btn js-open-modal"></div>
+        </div>
+        <div class="header-phone">
+          <a href="tel:+73912113190" class="header-phone__link"><span class="header-phone__link-numb">+7 (391) 211 31 90</span></a>
+          <div data-open-modal=".modal-call" class="header-phone__btn-modal js-open-modal">
+            Заказать звонок
+          </div>
+        </div>
+      </div>
+      <div class="header-control">
+        <a href="tel:+73912113190" class="header-control__btn phone-mobile">
+          <img src="../img/icon-phone-mobile.svg" alt="" class="header-phone__link-icon">
+        </a>
+        <div data-open-modal=".basket" class="header-control__btn backet-open-btn js-open-modal">
+          <img src="../img/icon-basket.svg" alt="">
+          <div class="badjik">99</div>
+        </div>
+        <div data-open-modal=".modal-authorization" class="header-control__btn js-open-modal">
+          <img src="../img/icon-LK.svg" alt="">
+        </div>
+        <a href="#" class="header-control__btn">
+          <img src="../img/icon-favorites.svg" alt="">
+          <div class="badjik">99</div>
+        </a>
+      </div>
+      <div class="modal catalog-modal">
+        <div class="overlay"></div>
+        <div class="calalog-modal__block">
+          <div class="catalog-modal__header">
+            <div class="catalog-block__close">
+              <div class="close-modal"></div>
+            </div>
+            <a href="tel:+73912113190" class="header-phone__link"><span class="header-phone__link-numb">+7 (391) 211 31 90</span></a>
+            <div data-open-modal=".modal-call" class="header-phone__btn-modal js-open-modal">
+              Заказать звонок
+            </div>
+          </div>
+          <div class="nav-mobile">
+            <a href="#" class="nav-mobile__link"> Сертификаты </a>
+            <a href="#" class="nav-mobile__link"> Подарочные карты </a>
+            <a href="#" class="nav-mobile__link"> Оплата и доставка </a>
+            <a href="#" class="nav-mobile__link"> Обмен и возврат </a>
+            <a href="#" class="nav-mobile__link"> Рассрочка </a>
+            <a href="#" class="nav-mobile__link"> Контакты </a>
+            <a href="#" class="nav-mobile__link"> Специальные предложения </a>
+          </div>
+          <div class="catalog-categories__block">
+            <div class="catalog-categories scroll">
+              <div class="catalog-categories__item categorie-collections js-tab-trigger" data-tab="1">
+                <div class="catalog-categorie__name">Коллекции</div>
+                <div class="catalog-categorie__arrow">
+                  <svg width="7" height="15" viewBox="0 0 7 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.5L5 7.5L0 12.5L0 14.5L7 7.5L0 0.5L0 2.5Z" fill="#7A7967"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="catalog-categories__item js-tab-trigger" data-tab="2">
+                <div class="catalog-categorie__name">Фарфор</div>
+                <div class="catalog-categorie__arrow">
+                  <svg width="7" height="15" viewBox="0 0 7 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.5L5 7.5L0 12.5L0 14.5L7 7.5L0 0.5L0 2.5Z" fill="#7A7967"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="catalog-categories__item js-tab-trigger" data-tab="3">
+                <div class="catalog-categorie__name">Стекло</div>
+                <div class="catalog-categorie__arrow">
+                  <svg width="7" height="15" viewBox="0 0 7 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.5L5 7.5L0 12.5L0 14.5L7 7.5L0 0.5L0 2.5Z" fill="#7A7967"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="catalog-categories__item js-tab-trigger" data-tab="4">
+                <div class="catalog-categorie__name">Хрусталь</div>
+                <div class="catalog-categorie__arrow">
+                  <svg width="7" height="15" viewBox="0 0 7 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.5L5 7.5L0 12.5L0 14.5L7 7.5L0 0.5L0 2.5Z" fill="#7A7967"/>
+                  </svg>
+                </div>
+              </div>
+              <a href="#" class="catalog-categories__item">
+                <div class="catalog-categorie__name">Столовые приборы</div>
+              </a>
+              <a href="#" class="catalog-categories__item">
+                <div class="catalog-categorie__name">Кастрюли и сковороды</div>
+              </a>
+              <a href="#" class="catalog-categories__item">
+                <div class="catalog-categorie__name">Лампы и люстры</div>
+              </a>
+              <div class="catalog-categories__item js-tab-trigger" data-tab="5">
+                <div class="catalog-categorie__name">Предметы декора</div>
+                <div class="catalog-categorie__arrow">
+                  <svg width="7" height="15" viewBox="0 0 7 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.5L5 7.5L0 12.5L0 14.5L7 7.5L0 0.5L0 2.5Z" fill="#7A7967"/>
+                  </svg>
+                </div>
+              </div>
+              <a href="#" class="catalog-categories__item">
+                <div class="catalog-categorie__name">
+                  Подарочные сертификаты
+                </div>
+              </a>
+              <div class="catalog-categories__item js-tab-trigger" data-tab="6">
+                <div class="catalog-categorie__name">HoReCa</div>
+                <div class="catalog-categorie__arrow">
+                  <svg width="7" height="15" viewBox="0 0 7 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.5L5 7.5L0 12.5L0 14.5L7 7.5L0 0.5L0 2.5Z" fill="#7A7967"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="catalog-subcategories scroll">
+              <div class="catalog-subcategories__box js-tab-content" data-tab="1">
+                <div class="catalog-subcategories__box-close">
+                  <img src="../img/subcoteg-arrow-hidden.svg" alt="">
+                </div>
+                <div class="catalog-subcategories__link">
+                  <a href="#" class="catalog-subcategorie__name">
+                    Столовые сервизы
+                  </a>
+                  <a href="#" class="catalog-subcategorie__collection">
+                    Коллекции
+                  </a>
+                </div>
+                <div class="catalog-subcategories__link">
+                  <a href="#" class="catalog-subcategorie__name">
+                    Чайные сервизы
+                  </a>
+                  <a href="#" class="catalog-subcategorie__collection">
+                    Коллекции
+                  </a>
+                </div>
+                <div class="catalog-subcategories__link">
+                  <a href="#" class="catalog-subcategorie__name">
+                    Кофейные сервизы
+                  </a>
+                  <a href="#" class="catalog-subcategorie__collection">
+                    Коллекции
+                  </a>
+                </div>
+                <div class="catalog-subcategories__link">
+                  <a href="#" class="catalog-subcategorie__name">
+                    Чайные пары
+                  </a>
+                  <a href="#" class="catalog-subcategorie__collection">
+                    Коллекции
+                  </a>
+                </div>
+                <a href="#" class="catalog-subcategories__link">
+                  <span class="catalog-subcategorie__name">
+                    Кофейные пары
+                  </span>
+                </a>
+                <a href="#" class="catalog-subcategories__link">
+                  <span class="catalog-subcategorie__name"> Кружки </span>
+                </a>
+                <a href="#" class="catalog-subcategories__link">
+                  <span class="catalog-subcategorie__name">
+                    Жаропрочный фарфор
+                  </span>
+                </a>
+                <a href="#" class="catalog-subcategories__link">
+                  <span class="catalog-subcategorie__name">
+                    Детские наборы
+                  </span>
+                </a>
+              </div>
+              <div class="catalog-subcategories__box js-tab-content" data-tab="2">
+                <div class="catalog-subcategories__box-close">
+                  <img src="../img/subcoteg-arrow-hidden.svg" alt="">
+                </div>
+                <div class="catalog-subcategories__link">
+                  <a href="#" class="catalog-subcategorie__name">
+                    Столовые сервизы
+                  </a>
+                  <a href="#" class="catalog-subcategorie__collection">
+                    Коллекции
+                  </a>
+                </div>
+                <div class="catalog-subcategories__link">
+                  <a href="#" class="catalog-subcategorie__name">
+                    Чайные сервизы
+                  </a>
+                  <a href="#" class="catalog-subcategorie__collection">
+                    Коллекции
+                  </a>
+                </div>
+                <div class="catalog-subcategories__link">
+                  <a href="#" class="catalog-subcategorie__name">
+                    Кофейные сервизы
+                  </a>
+                  <a href="#" class="catalog-subcategorie__collection">
+                    Коллекции
+                  </a>
+                </div>
+                <div class="catalog-subcategories__link">
+                  <a href="#" class="catalog-subcategorie__name">
+                    Чайные пары
+                  </a>
+                  <a href="#" class="catalog-subcategorie__collection">
+                    Коллекции
+                  </a>
+                </div>
+                <a href="#" class="catalog-subcategories__link">
+                  <span class="catalog-subcategorie__name">
+                    Кофейные пары
+                  </span>
+                </a>
+                <a href="#" class="catalog-subcategories__link">
+                  <span class="catalog-subcategorie__name"> Кружки </span>
+                </a>
+                <a href="#" class="catalog-subcategories__link">
+                  <span class="catalog-subcategorie__name">
+                    Жаропрочный фарфор
+                  </span>
+                </a>
+                <a href="#" class="catalog-subcategories__link">
+                  <span class="catalog-subcategorie__name">
+                    Детские наборы
+                  </span>
+                </a>
+              </div>
+              <div class="catalog-subcategories__box js-tab-content" data-tab="3">
+                <div class="catalog-subcategories__box-close">
+                  <img src="../img/subcoteg-arrow-hidden.svg" alt="">
+                </div>
+                <div class="catalog-subcategories__link">
+                  <a href="#" class="catalog-subcategorie__name">
+                    Столовые сервизы
+                  </a>
+                  <a href="#" class="catalog-subcategorie__collection">
+                    Коллекции
+                  </a>
+                </div>
+                <div class="catalog-subcategories__link">
+                  <a href="#" class="catalog-subcategorie__name">
+                    Чайные сервизы
+                  </a>
+                  <a href="#" class="catalog-subcategorie__collection">
+                    Коллекции
+                  </a>
+                </div>
+                <div class="catalog-subcategories__link">
+                  <a href="#" class="catalog-subcategorie__name">
+                    Кофейные сервизы
+                  </a>
+                  <a href="#" class="catalog-subcategorie__collection">
+                    Коллекции
+                  </a>
+                </div>
+                <div class="catalog-subcategories__link">
+                  <a href="#" class="catalog-subcategorie__name">
+                    Чайные пары
+                  </a>
+                  <a href="#" class="catalog-subcategorie__collection">
+                    Коллекции
+                  </a>
+                </div>
+                <a href="#" class="catalog-subcategories__link">
+                  <span class="catalog-subcategorie__name">
+                    Кофейные пары
+                  </span>
+                </a>
+                <a href="#" class="catalog-subcategories__link">
+                  <span class="catalog-subcategorie__name"> Кружки </span>
+                </a>
+                <a href="#" class="catalog-subcategories__link">
+                  <span class="catalog-subcategorie__name">
+                    Жаропрочный фарфор
+                  </span>
+                </a>
+                <a href="#" class="catalog-subcategories__link">
+                  <span class="catalog-subcategorie__name">
+                    Детские наборы
+                  </span>
+                </a>
+              </div>
+              <div class="catalog-subcategories__box js-tab-content" data-tab="4">
+                <div class="catalog-subcategories__box-close">
+                  <img src="../img/subcoteg-arrow-hidden.svg" alt="">
+                </div>
+                <div class="catalog-subcategories__link">
+                  <a href="#" class="catalog-subcategorie__name">
+                    Кофейные сервизы
+                  </a>
+                  <a href="#" class="catalog-subcategorie__collection">
+                    Коллекции
+                  </a>
+                </div>
+                <div class="catalog-subcategories__link">
+                  <a href="#" class="catalog-subcategorie__name">
+                    Чайные пары
+                  </a>
+                  <a href="#" class="catalog-subcategorie__collection">
+                    Коллекции
+                  </a>
+                </div>
+                <a href="#" class="catalog-subcategories__link">
+                  <span class="catalog-subcategorie__name">
+                    Кофейные пары
+                  </span>
+                </a>
+                <a href="#" class="catalog-subcategories__link">
+                  <span class="catalog-subcategorie__name"> Кружки </span>
+                </a>
+                <a href="#" class="catalog-subcategories__link">
+                  <span class="catalog-subcategorie__name">
+                    Жаропрочный фарфор
+                  </span>
+                </a>
+                <a href="#" class="catalog-subcategories__link">
+                  <span class="catalog-subcategorie__name">
+                    Детские наборы
+                  </span>
+                </a>
+              </div>
+              <div class="catalog-subcategories__box js-tab-content" data-tab="5">
+                <div class="catalog-subcategories__box-close">
+                  <img src="../img/subcoteg-arrow-hidden.svg" alt="">
+                </div>
+                <a href="#" class="catalog-subcategories__link">
+                  <span class="catalog-subcategorie__name">
+                    Кофейные пары
+                  </span>
+                </a>
+                <a href="#" class="catalog-subcategories__link">
+                  <span class="catalog-subcategorie__name"> Кружки </span>
+                </a>
+                <a href="#" class="catalog-subcategories__link">
+                  <span class="catalog-subcategorie__name">
+                    Жаропрочный фарфор
+                  </span>
+                </a>
+                <a href="#" class="catalog-subcategories__link">
+                  <span class="catalog-subcategorie__name">
+                    Детские наборы
+                  </span>
+                </a>
+              </div>
+              <div class="catalog-subcategories__box js-tab-content" data-tab="6">
+                <div class="catalog-subcategories__box-close">
+                  <img src="../img/subcoteg-arrow-hidden.svg" alt="">
+                </div>
+                <div class="catalog-subcategories__link">
+                  <a href="#" class="catalog-subcategorie__name">
+                    Столовые сервизы
+                  </a>
+                  <a href="#" class="catalog-subcategorie__collection">
+                    Коллекции
+                  </a>
+                </div>
+                <a href="#" class="catalog-subcategories__link">
+                  <span class="catalog-subcategorie__name">
+                    Кофейные пары
+                  </span>
+                </a>
+                <a href="#" class="catalog-subcategories__link">
+                  <span class="catalog-subcategorie__name"> Кружки </span>
+                </a>
+                <a href="#" class="catalog-subcategories__link">
+                  <span class="catalog-subcategorie__name">
+                    Жаропрочный фарфор
+                  </span>
+                </a>
+                <a href="#" class="catalog-subcategories__link">
+                  <span class="catalog-subcategorie__name">
+                    Детские наборы
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal basket">
+        <div class="overlay"></div>
+        <div class="modal-block">
+          <div class="modal-header">
+            <div class="ttile-modal__inner">
+              <h3 class="title_modal">Корзина</h3>
+              <div class="basket-header__text">
+                <span>Помощь в покупке</span>
+                <a href="tel:+73912113190">+7 (391) 211 31 90</a>
+              </div>
+            </div>
+            <div class="close-modal"></div>
+          </div>
+          <div class="basket-content">
+            <div class="basket-card__list scroll">
+              <div class="basket-card">
+                <div class="basket-card__img">
+                  <img src="../img/card-product1.jpg" alt="">
+                </div>
+                <div class="basket-card__content">
+                  <a href="#" class="basket-card__name">
+                    Набор бокалов для коньяка 2 шт. 250 мл, бутео, марко, Охота
+                  </a>
+                  <div class="basket-card__price-box">
+                    <div class="basket-card__price">892,5 ₽</div>
+                    <div class="basket-card__price-old">1 050 ₽</div>
+                  </div>
+                  <div class="counter-wrapper">
+                    <div class="counter">
+                      <div class="counter__minus"></div>
+                      <input type="number" name="QUANTITY" value="1" class="counter__number">
+                      <div class="counter__plus"></div>
+                    </div>
+                    <div class="price-counter">= <span> 1 785 ₽</span></div>
+                  </div>
+                </div>
+                <div class="basket-card__btn-box">
+                  <div class="basket-card__btn basket-card__btn_delete">
+                    <img src="../img/basket-delete.svg" alt="">
+                  </div>
+                  <div class="basket-card__btn basket-card__btn_favorite">
+                    <img src="../img/Star-card.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="basket-card">
+                <div class="basket-card__img">
+                  <img src="../img/card-product2.jpg" alt="">
+                </div>
+                <div class="basket-card__content">
+                  <a href="#" class="basket-card__name">
+                    Бокал для пива 500 мл, бутео, марко, Охота
+                  </a>
+                  <div class="basket-card__price-box">
+                    <div class="basket-card__price">892,5 ₽</div>
+                    <div class="basket-card__price-old">1 050 ₽</div>
+                  </div>
+                  <div class="counter-wrapper">
+                    <div class="counter">
+                      <div class="counter__minus"></div>
+                      <input type="number" name="QUANTITY" value="1" class="counter__number">
+                      <div class="counter__plus"></div>
+                    </div>
+                    <div class="price-counter">= <span> 1 785 ₽</span></div>
+                  </div>
+                </div>
+                <div class="basket-card__btn-box">
+                  <div class="basket-card__btn basket-card__btn_delete">
+                    <img src="../img/basket-delete.svg" alt="">
+                  </div>
+                  <div class="basket-card__btn basket-card__btn_favorite">
+                    <img src="../img/Star-card.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="basket-card delete">
+                <div class="basket-card__img">
+                  <img src="../img/card-product2.jpg" alt="">
+                </div>
+                <div class="basket-card__content">
+                  <a href="#" class="basket-card__name">
+                    Бокал для пива 500 мл, бутео, марко, Охота
+                  </a>
+                  <div class="basket-card__price-box">
+                    <div class="basket-card__price">892,5 ₽</div>
+                    <div class="basket-card__price-old">1 050 ₽</div>
+                  </div>
+                  <div class="counter-wrapper">
+                    <div class="counter">
+                      <div class="counter__minus"></div>
+                      <input type="number" name="QUANTITY" value="1" class="counter__number">
+                      <div class="counter__plus"></div>
+                    </div>
+                    <div class="price-counter">= <span> 1 785 ₽</span></div>
+                  </div>
+                </div>
+                <div class="basket-card__btn-box">
+                  <div class="basket-card__btn basket-card__btn_delete">
+                    <img src="../img/basket-delete.svg" alt="">
+                  </div>
+                  <div class="basket-card__btn basket-card__btn_favorite">
+                    <img src="../img/Star-card.svg" alt="">
+                  </div>
+                </div>
+                <div class="basket-card__delete">
+                  <div class="basket-card__delete_btn">
+                    <img src="../img/loader-icon.svg" alt="">
+                    <span>Вернуть товар в корзину</span>
+                  </div>
+                </div>
+              </div>
+              <div class="basket-card">
+                <div class="basket-card__img">
+                  <img src="../img/card-product2.jpg" alt="">
+                </div>
+                <div class="basket-card__content">
+                  <a href="#" class="basket-card__name">
+                    Бокал для пива 500 мл, бутео, марко, Охота
+                  </a>
+                  <div class="basket-card__price-box">
+                    <div class="basket-card__price">892,5 ₽</div>
+                    <div class="basket-card__price-old">1 050 ₽</div>
+                  </div>
+                  <div class="counter-wrapper">
+                    <div class="counter">
+                      <div class="counter__minus"></div>
+                      <input type="number" name="QUANTITY" value="1" class="counter__number">
+                      <div class="counter__plus"></div>
+                    </div>
+                    <div class="price-counter">= <span> 1 785 ₽</span></div>
+                  </div>
+                </div>
+                <div class="basket-card__btn-box">
+                  <div class="basket-card__btn basket-card__btn_delete">
+                    <img src="../img/basket-delete.svg" alt="">
+                  </div>
+                  <div class="basket-card__btn basket-card__btn_favorite">
+                    <img src="../img/Star-card.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="basket-card">
+                <div class="basket-card__img">
+                  <img src="../img/card-product2.jpg" alt="">
+                </div>
+                <div class="basket-card__content">
+                  <a href="#" class="basket-card__name">
+                    Бокал для пива 500 мл, бутео, марко, Охота
+                  </a>
+                  <div class="basket-card__price-box">
+                    <div class="basket-card__price">892,5 ₽</div>
+                    <div class="basket-card__price-old">1 050 ₽</div>
+                  </div>
+                  <div class="counter-wrapper">
+                    <div class="counter">
+                      <div class="counter__minus"></div>
+                      <input type="number" name="QUANTITY" value="1" class="counter__number">
+                      <div class="counter__plus"></div>
+                    </div>
+                    <div class="price-counter">= <span> 1 785 ₽</span></div>
+                  </div>
+                </div>
+                <div class="basket-card__btn-box">
+                  <div class="basket-card__btn basket-card__btn_delete">
+                    <img src="../img/basket-delete.svg" alt="">
+                  </div>
+                  <div class="basket-card__btn basket-card__btn_favorite">
+                    <img src="../img/Star-card.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="basket-card">
+                <div class="basket-card__img">
+                  <img src="../img/card-product2.jpg" alt="">
+                </div>
+                <div class="basket-card__content">
+                  <a href="#" class="basket-card__name">
+                    Бокал для пива 500 мл, бутео, марко, Охота
+                  </a>
+                  <div class="basket-card__price-box">
+                    <div class="basket-card__price">892,5 ₽</div>
+                    <div class="basket-card__price-old">1 050 ₽</div>
+                  </div>
+                  <div class="counter-wrapper">
+                    <div class="counter">
+                      <div class="counter__minus"></div>
+                      <input type="number" name="QUANTITY" value="1" class="counter__number">
+                      <div class="counter__plus"></div>
+                    </div>
+                    <div class="price-counter">= <span> 1 785 ₽</span></div>
+                  </div>
+                </div>
+                <div class="basket-card__btn-box">
+                  <div class="basket-card__btn basket-card__btn_delete">
+                    <img src="../img/basket-delete.svg" alt="">
+                  </div>
+                  <div class="basket-card__btn basket-card__btn_favorite">
+                    <img src="../img/Star-card.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="basket-card">
+                <div class="basket-card__img">
+                  <img src="../img/card-product2.jpg" alt="">
+                </div>
+                <div class="basket-card__content">
+                  <a href="#" class="basket-card__name">
+                    Бокал для пива 500 мл, бутео, марко, Охота
+                  </a>
+                  <div class="basket-card__price-box">
+                    <div class="basket-card__price">892,5 ₽</div>
+                    <div class="basket-card__price-old">1 050 ₽</div>
+                  </div>
+                  <div class="counter-wrapper">
+                    <div class="counter">
+                      <div class="counter__minus"></div>
+                      <input type="number" name="QUANTITY" value="1" class="counter__number">
+                      <div class="counter__plus"></div>
+                    </div>
+                    <div class="price-counter">= <span> 1 785 ₽</span></div>
+                  </div>
+                </div>
+                <div class="basket-card__btn-box">
+                  <div class="basket-card__btn basket-card__btn_delete">
+                    <img src="../img/basket-delete.svg" alt="">
+                  </div>
+                  <div class="basket-card__btn basket-card__btn_favorite">
+                    <img src="../img/Star-card.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="basket-ordering">
+              <div class="basket-price__box">
+                <div class="basket-price__name">Стоимость</div>
+                <div class="basket-price">2 700 ₽</div>
+              </div>
+              <div class="basket-price__box">
+                <div class="basket-price__name">
+                  Скидка
+                  <div class="prompt">
+                    <div class="prompt-btn">
+                      <img src="../img/prompt-icon.svg" alt="">
+                    </div>
+                    <div class="prompt-text">
+                      Текст подсказки Текст подсказки
+                    </div>
+                  </div>
+                </div>
+                <div class="basket-price">-405 ₽</div>
+              </div>
+              <!--Цветные подписи basket-ordering__text видны только при невыполненном условии  -->
+              <div class="basket-ordering__text">
+                Для скидки 20%, докупите на 200 ₽
+              </div>
+              <div class="basket-price__box basket-price__box_total">
+                <div class="basket-price__name">Итого</div>
+                <div class="basket-price basket-price__total">2 295 ₽</div>
+              </div>
+              <a href="#" class="btn-black"> Оформить заказ </a>
+              <div class="btn-border">Быстрый заказ</div>
+              <a href="#" class="basket-btn__delivery">
+                <img src="../img/delivery-btn-icon.svg" alt="">
+                <span>Оплата и доставка</span>
+              </a>
+              <a href="#" class="basket-btn__exchange">
+                <img src="../img/exchange-btn-icon.svg" alt="">
+                <span>Обмен и возврат</span>
+              </a>
+            </div>
+            <div class="basket-mobile-panel">
+              <div class="basket-mobile-price">
+                <span class="basket-mobile-price__text">Итого</span>
+                <span class="basket-mobile-price__value">9 820 ₽</span>
+              </div>
+              <div class="basket-mobile__controls">
+                <a href="#" class="btn-black"> Оформить заказ </a>
+                <div class="btn-border">Быстрый заказ</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- модалка заказать звонок  -->
+      <div class="modal modal-main modal-call">
+        <div class="overlay"></div>
+        <div class="modal-block">
+          <div class="modal-header">
+            <h3 class="title_modal">Заказ звонка</h3>
+            <div class="close-modal"></div>
+          </div>
+          <div class="modal-content">
+            <div class="modal-text">
+              Укажите номер телефона и мы свяжемся с вами для уточнения деталей
+            </div>
+            <form method="post" action="/" data-parsley-validate class="form-modal">
+              <label class="label first-elem">
+                <input type="text" name="name" data-parsley-trigger="change" data-parsley-required-message="Введите ваше имя" class="input">
+                <span class="placeholder-input">Ваше имя</span>
+                <span class="clear-input"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm4 11.05l-1.12 1.185L8 9.185l-2.88 3.05L4 11.05 6.88 8 4 4.95l1.12-1.185L8 6.815l2.88-3.05L12 4.95 9.12 8 12 11.05z" fill="#8A8A8A"/>
+                  </svg>
+                </span>
+              </label>
+              <label class="label">
+                <input type="text" name="phone" data-parsley-required-message="Введите контактный номер телефона" data-parsley-required="true" required="" data-parsley-trigger="change" class="input phone_validate">
+                <span class="placeholder-input">Контактный номер *</span>
+                <span class="clear-input"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm4 11.05l-1.12 1.185L8 9.185l-2.88 3.05L4 11.05 6.88 8 4 4.95l1.12-1.185L8 6.815l2.88-3.05L12 4.95 9.12 8 12 11.05z" fill="#8A8A8A"/></svg></span>
+              </label>
+              <div class="radio-box">
+                <label class="radio-label">
+                  <input type="radio" name="time" value="Как можно скорее" class="radio" checked="checked">
+                  <span class="radio-checker"></span>
+                  <span class="radio-text"> Как можно скорее </span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="time" value="Через час" class="radio">
+                  <span class="radio-checker"></span>
+                  <span class="radio-text"> Через час </span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="time" value="Завтра утром" class="radio">
+                  <span class="radio-checker"></span>
+                  <span class="radio-text"> Завтра утром </span>
+                </label>
+              </div>
+              <label class="label-textarea">
+                <textarea name="comment" data-parsley-trigger="change" data-parsley-required-message="Комментарий" class="textarea"></textarea>
+                <span class="placeholder-input">Комментарий</span>
+                <span class="clear-input">
+                  <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm4 11.05l-1.12 1.185L8 9.185l-2.88 3.05L4 11.05 6.88 8 4 4.95l1.12-1.185L8 6.815l2.88-3.05L12 4.95 9.12 8 12 11.05z" fill="#8A8A8A"/>
+                  </svg>
+                </span>
+              </label>
+              <div class="form-agree">
+                <span> Отправляя данные, я даю свое согласие на</span>
+                <div data-open-modal=".modal-сonsent" class="form-agree__link js-open-modal">
+                  обработку перс. данных
+                </div>
+              </div>
+              <button type="submit" class="btn-border btn-form last-elem">
+                Перезвоните мне
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- модалка Заказ товара  -->
+      <div class="modal modal-main modal-order-goods">
+        <div class="overlay"></div>
+        <div class="modal-block">
+          <div class="modal-header">
+            <h3 class="title_modal">Заказ товара</h3>
+            <div class="close-modal"></div>
+          </div>
+          <div class="modal-content">
+            <div class="modal-text">
+              Данного товара нет в наличии, вы можете оставить свой номер
+              телефона и мы свяжемся с вами
+            </div>
+            <form method="post" action="/" data-parsley-validate class="form-modal">
+              <label class="label first-elem">
+                <input type="text" name="phone" data-parsley-required-message="Введите контактный номер телефона" data-parsley-required="true" required="" data-parsley-trigger="change" class="input phone_validate">
+                <span class="placeholder-input">Контактный номер *</span>
+                <span class="clear-input"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm4 11.05l-1.12 1.185L8 9.185l-2.88 3.05L4 11.05 6.88 8 4 4.95l1.12-1.185L8 6.815l2.88-3.05L12 4.95 9.12 8 12 11.05z" fill="#8A8A8A"/></svg></span>
+              </label>
+              <div class="form-agree">
+                <span> Отправляя данные, я даю свое согласие на</span>
+                <div data-open-modal=".modal-сonsent" class="form-agree__link js-open-modal">
+                  обработку перс. данных
+                </div>
+              </div>
+              <button type="submit" class="btn-border btn-form last-elem">
+                Отправить
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- модалка Быстрая покупка  -->
+      <div class="modal modal-main modal-fast-buy">
+        <div class="overlay"></div>
+        <div class="modal-block">
+          <div class="modal-header">
+            <h3 class="title_modal">Быстрая покупка</h3>
+            <div class="close-modal"></div>
+          </div>
+          <div class="modal-content">
+            <div class="modal-text">
+              Укажите номер телефона и мы свяжемся с вами для уточнения деталей
+            </div>
+            <form method="post" action="/" data-parsley-validate class="form-modal">
+              <label class="label first-elem">
+                <input type="text" name="phone" data-parsley-required-message="Введите контактный номер телефона" data-parsley-required="true" required="" data-parsley-trigger="change" class="input phone_validate">
+                <span class="placeholder-input">Контактный номер *</span>
+                <span class="clear-input"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm4 11.05l-1.12 1.185L8 9.185l-2.88 3.05L4 11.05 6.88 8 4 4.95l1.12-1.185L8 6.815l2.88-3.05L12 4.95 9.12 8 12 11.05z" fill="#8A8A8A"/></svg></span>
+              </label>
+              <div class="form-agree">
+                <span> Отправляя данные, я даю свое согласие на</span>
+                <div data-open-modal=".modal-сonsent" class="form-agree__link js-open-modal">
+                  обработку перс. данных
+                </div>
+              </div>
+              <button type="submit" class="btn-border btn-form last-elem">
+                Отправить
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- модалка Онлайн показ  -->
+      <div class="modal modal-main modal-online-display">
+        <div class="overlay"></div>
+        <div class="modal-block">
+          <div class="modal-header">
+            <h3 class="title_modal">Онлайн показ</h3>
+            <div class="close-modal"></div>
+          </div>
+          <div class="modal-content">
+            <form method="post" action="/" data-parsley-validate class="form-modal">
+              <label class="label first-elem">
+                <input type="text" name="name" data-parsley-trigger="change" data-parsley-required-message="Введите ваше имя" class="input">
+                <span class="placeholder-input">Ваше имя</span>
+                <span class="clear-input"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm4 11.05l-1.12 1.185L8 9.185l-2.88 3.05L4 11.05 6.88 8 4 4.95l1.12-1.185L8 6.815l2.88-3.05L12 4.95 9.12 8 12 11.05z" fill="#8A8A8A"/></svg></span>
+              </label>
+              <label class="label">
+                <input type="text" name="phone" data-parsley-required-message="Введите контактный номер телефона" data-parsley-required="true" required="" data-parsley-trigger="change" class="input phone_validate">
+                <span class="placeholder-input">Контактный номер *</span>
+                <span class="clear-input"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm4 11.05l-1.12 1.185L8 9.185l-2.88 3.05L4 11.05 6.88 8 4 4.95l1.12-1.185L8 6.815l2.88-3.05L12 4.95 9.12 8 12 11.05z" fill="#8A8A8A"/></svg></span>
+              </label>
+              <label class="label">
+                <input type="text" name="name" data-parsley-trigger="change" data-parsley-required-message="Введите удобное время показа" class="input input-time">
+                <span class="placeholder-input">Удобное время показа</span>
+                <span class="clear-input"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm4 11.05l-1.12 1.185L8 9.185l-2.88 3.05L4 11.05 6.88 8 4 4.95l1.12-1.185L8 6.815l2.88-3.05L12 4.95 9.12 8 12 11.05z" fill="#8A8A8A"/></svg></span>
+              </label>
+              <label class="label-textarea">
+                <textarea name="comment" data-parsley-trigger="change" data-parsley-required-message="Комментарий" class="textarea"></textarea>
+                <span class="placeholder-input">Комментарий</span>
+                <span class="clear-input">
+                  <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm4 11.05l-1.12 1.185L8 9.185l-2.88 3.05L4 11.05 6.88 8 4 4.95l1.12-1.185L8 6.815l2.88-3.05L12 4.95 9.12 8 12 11.05z" fill="#8A8A8A"/>
+                  </svg>
+                </span>
+              </label>
+              <div class="form-agree">
+                <span> Отправляя данные, я даю свое согласие на</span>
+                <div data-open-modal=".modal-сonsent" class="form-agree__link js-open-modal">
+                  обработку перс. данных
+                </div>
+              </div>
+              <button type="submit" class="btn-border btn-form last-elem">
+                Заказать
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- модалка Авторизация  -->
+      <div class="modal modal-main modal-authorization">
+        <div class="overlay"></div>
+        <div class="modal-block">
+          <div class="modal-header">
+            <h3 class="title_modal">Авторизация</h3>
+            <div class="close-modal"></div>
+          </div>
+          <div class="modal-content">
+            <form method="post" action="/" data-parsley-validate class="form-modal">
+              <label class="label first-elem">
+                <input type="email" name="email" data-parsley-trigger="change" required data-parsley-required-message="Введите ваш Е-mail" class="input">
+                <span class="placeholder-input">Е-mail</span>
+                <span class="clear-input"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm4 11.05l-1.12 1.185L8 9.185l-2.88 3.05L4 11.05 6.88 8 4 4.95l1.12-1.185L8 6.815l2.88-3.05L12 4.95 9.12 8 12 11.05z" fill="#8A8A8A"/></svg></span>
+              </label>
+              <label class="label label-password">
+                <input type="password" name="password" data-parsley-trigger="change" data-parsley-required-message="Введите ваш пароль" class="input js-password">
+                <span class="placeholder-input">Пароль</span>
+                <span class="password-control">
+                  <img src="../img/password-open.svg" alt="" class="password-control__open">
+                  <img src="../img/password-hidden.svg" alt="" class="password-control__hidden">
+                </span>
+              </label>
+              <div data-open-modal=".modal-recovery-password" data-close-modal=".modal-authorization" class="restore-password-btn js-open-modal js-close-modal">
+                <img src="../img/restore-password-icon.svg" alt="">
+                <span>Забыли пароль?</span>
+              </div>
+              <button type="submit" class="btn-border btn-form last-elem">
+                Войти
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- модалка Восстановление пароля  -->
+      <div class="modal modal-main modal-recovery-password">
+        <div class="overlay"></div>
+        <div class="modal-block">
+          <div class="modal-header">
+            <h3 class="title_modal">Восстановление пароля</h3>
+            <div class="close-modal"></div>
+          </div>
+          <div class="modal-content">
+            <div class="modal-text">
+              Укажите адрес электронной почты, с которым вы регистрировались
+              ранее, и мы вышлем инструкцию по смене пароля
+            </div>
+            <form method="post" action="/" data-parsley-validate class="form-modal">
+              <label class="label first-elem">
+                <input type="email" name="email" data-parsley-trigger="change" required data-parsley-required-message="Введите ваш Е-mail" class="input">
+                <span class="placeholder-input">Е-mail</span>
+                <span class="clear-input"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm4 11.05l-1.12 1.185L8 9.185l-2.88 3.05L4 11.05 6.88 8 4 4.95l1.12-1.185L8 6.815l2.88-3.05L12 4.95 9.12 8 12 11.05z" fill="#8A8A8A"/></svg></span>
+              </label>
+              <div data-open-modal=".modal-authorization" data-close-modal=".modal-recovery-password" class="btn-authorization js-open-modal js-close-modal">
+                <img src="../img/arrow-autore.svg" alt="">
+                <span>Авторизация</span>
+              </div>
+              <button type="submit" class="btn-border btn-form last-elem">
+                Отправить
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- модалка Регистрация  -->
+      <div class="modal modal-main modal-registration">
+        <div class="overlay"></div>
+        <div class="modal-block">
+          <div class="modal-header">
+            <h3 class="title_modal">Регистрация</h3>
+            <div class="close-modal"></div>
+          </div>
+          <div class="modal-content">
+            <form method="post" action="/" data-parsley-validate class="form-modal">
+              <label class="label first-elem">
+                <input type="text" name="name" data-parsley-trigger="change" data-parsley-required-message="Введите ФИО" class="input">
+                <span class="placeholder-input">ФИО</span>
+                <span class="clear-input"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm4 11.05l-1.12 1.185L8 9.185l-2.88 3.05L4 11.05 6.88 8 4 4.95l1.12-1.185L8 6.815l2.88-3.05L12 4.95 9.12 8 12 11.05z" fill="#8A8A8A"></path>
+                  </svg>
+                </span>
+              </label>
+              <label class="label">
+                <input type="text" name="phone" data-parsley-required-message="Введите контактный номер телефона" data-parsley-required="true" required="" data-parsley-trigger="change" class="input phone_validate">
+                <span class="placeholder-input">Контактный номер *</span>
+                <span class="clear-input"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm4 11.05l-1.12 1.185L8 9.185l-2.88 3.05L4 11.05 6.88 8 4 4.95l1.12-1.185L8 6.815l2.88-3.05L12 4.95 9.12 8 12 11.05z" fill="#8A8A8A"></path></svg></span>
+              </label>
+              <label class="label">
+                <input type="email" name="email" data-parsley-trigger="change" required data-parsley-required-message="Введите ваш Е-mail" class="input">
+                <span class="placeholder-input">Е-mail</span>
+                <span class="clear-input"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm4 11.05l-1.12 1.185L8 9.185l-2.88 3.05L4 11.05 6.88 8 4 4.95l1.12-1.185L8 6.815l2.88-3.05L12 4.95 9.12 8 12 11.05z" fill="#8A8A8A"/></svg></span>
+              </label>
+              <label class="label label-password">
+                <input type="password" name="password" required data-parsley-trigger="change" data-parsley-required-message="Введите ваш пароль" class="input js-password">
+                <span class="placeholder-input">Пароль</span>
+                <span class="password-control">
+                  <img src="../img/password-open.svg" alt="" class="password-control__open">
+                  <img src="../img/password-hidden.svg" alt="" class="password-control__hidden">
+                </span>
+              </label>
+              <label class="label label-password">
+                <input type="password" name="password" data-parsley-trigger="change" required data-parsley-required-message="Введите ваш пароль" class="input js-password">
+                <span class="placeholder-input">Подтверждение пароля</span>
+                <span class="password-control">
+                  <img src="../img/password-open.svg" alt="" class="password-control__open">
+                  <img src="../img/password-hidden.svg" alt="" class="password-control__hidden">
+                </span>
+              </label>
+              <div class="form-agree">
+                <span> Отправляя данные, я даю свое согласие на</span>
+                <div data-open-modal=".modal-сonsent" class="form-agree__link js-open-modal">
+                  обработку перс. данных
+                </div>
+              </div>
+              <div class="form-btn__box">
+                <button type="submit" class="btn-border btn-form last-elem">
+                  Зарегистрироваться
+                </button>
+                <div data-open-modal=".modal-authorization" data-close-modal=".modal-registration" class="btn-authorization2 js-open-modal js-close-modal">
+                  У меня уже есть аккаунт
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- модалка Добавить профиль  -->
+      <div class="modal modal-main modal-add-profile">
+        <div class="overlay"></div>
+        <div class="modal-block">
+          <div class="modal-header">
+            <h3 class="title_modal">Добавить профиль</h3>
+            <div class="close-modal"></div>
+          </div>
+          <div class="modal-content">
+            <div class="tabs tabs-form">
+              <div class="tabs__btn">
+                <div class="tab-btn active">Физ. лицо</div>
+                <div class="tab-btn">Юр. лицо</div>
+              </div>
+              <div class="tabs__content">
+                <div class="tab-content active">
+                  <form method="post" action="/" data-parsley-validate class="form-modal">
+                    <label class="label first-elem">
+                      <input type="text" name="name" data-parsley-trigger="change" data-parsley-required-message="Введите ФИО" class="input">
+                      <span class="placeholder-input">ФИО</span>
+                      <span class="clear-input"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm4 11.05l-1.12 1.185L8 9.185l-2.88 3.05L4 11.05 6.88 8 4 4.95l1.12-1.185L8 6.815l2.88-3.05L12 4.95 9.12 8 12 11.05z" fill="#8A8A8A"></path>
+                        </svg>
+                      </span>
+                    </label>
+                    <label class="label">
+                      <input type="text" name="phone" data-parsley-required-message="Введите контактный номер телефона" data-parsley-trigger="change" class="input phone_validate">
+                      <span class="placeholder-input">Контактный номер</span>
+                      <span class="clear-input"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm4 11.05l-1.12 1.185L8 9.185l-2.88 3.05L4 11.05 6.88 8 4 4.95l1.12-1.185L8 6.815l2.88-3.05L12 4.95 9.12 8 12 11.05z" fill="#8A8A8A"></path></svg></span>
+                    </label>
+                    <label class="label">
+                      <input type="email" name="email" data-parsley-trigger="change" data-parsley-required-message="Введите ваш Е-mail" class="input">
+                      <span class="placeholder-input">Е-mail</span>
+                      <span class="clear-input"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm4 11.05l-1.12 1.185L8 9.185l-2.88 3.05L4 11.05 6.88 8 4 4.95l1.12-1.185L8 6.815l2.88-3.05L12 4.95 9.12 8 12 11.05z" fill="#8A8A8A"/></svg></span>
+                    </label>
+                    <div class="form-agree">
+                      <span> Отправляя данные, я даю свое согласие на</span>
+                      <div data-open-modal=".modal-сonsent" class="form-agree__link js-open-modal">
+                        обработку перс. данных
+                      </div>
+                    </div>
+                    <div class="form-btn__box">
+                      <button type="submit" class="btn-border btn-form last-elem">
+                        Сохранить
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                <div class="tab-content">
+                  <form method="post" action="/" data-parsley-validate class="form-modal">
+                    <label class="label first-elem">
+                      <input type="text" name="name" data-parsley-trigger="change" data-parsley-required-message="Введите ФИО" class="input">
+                      <span class="placeholder-input">ФИО</span>
+                      <span class="clear-input"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm4 11.05l-1.12 1.185L8 9.185l-2.88 3.05L4 11.05 6.88 8 4 4.95l1.12-1.185L8 6.815l2.88-3.05L12 4.95 9.12 8 12 11.05z" fill="#8A8A8A"></path>
+                        </svg>
+                      </span>
+                    </label>
+                    <label class="label">
+                      <input type="text" name="phone" data-parsley-required-message="Введите контактный номер телефона" data-parsley-trigger="change" class="input phone_validate">
+                      <span class="placeholder-input">Контактный номер</span>
+                      <span class="clear-input"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm4 11.05l-1.12 1.185L8 9.185l-2.88 3.05L4 11.05 6.88 8 4 4.95l1.12-1.185L8 6.815l2.88-3.05L12 4.95 9.12 8 12 11.05z" fill="#8A8A8A"></path></svg></span>
+                    </label>
+                    <label class="label">
+                      <input type="email" name="email" data-parsley-trigger="change" data-parsley-required-message="Введите ваш Е-mail" class="input">
+                      <span class="placeholder-input">Е-mail</span>
+                      <span class="clear-input"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm4 11.05l-1.12 1.185L8 9.185l-2.88 3.05L4 11.05 6.88 8 4 4.95l1.12-1.185L8 6.815l2.88-3.05L12 4.95 9.12 8 12 11.05z" fill="#8A8A8A"/></svg></span>
+                    </label>
+                    <label class="label">
+                      <input type="text" name="inn" data-parsley-trigger="change" data-parsley-required-message="Введите ИНН" class="input">
+                      <span class="placeholder-input">ИНН</span>
+                      <span class="clear-input"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm4 11.05l-1.12 1.185L8 9.185l-2.88 3.05L4 11.05 6.88 8 4 4.95l1.12-1.185L8 6.815l2.88-3.05L12 4.95 9.12 8 12 11.05z" fill="#8A8A8A"></path>
+                        </svg>
+                      </span>
+                    </label>
+                    <label class="label">
+                      <input type="text" name="address" data-parsley-trigger="change" data-parsley-required-message="Введите юридический адрес" class="input">
+                      <span class="placeholder-input">Юридический адрес</span>
+                      <span class="clear-input"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm4 11.05l-1.12 1.185L8 9.185l-2.88 3.05L4 11.05 6.88 8 4 4.95l1.12-1.185L8 6.815l2.88-3.05L12 4.95 9.12 8 12 11.05z" fill="#8A8A8A"></path>
+                        </svg>
+                      </span>
+                    </label>
+                    <div class="form-agree">
+                      <span> Отправляя данные, я даю свое согласие на</span>
+                      <div data-open-modal=".modal-сonsent" class="form-agree__link js-open-modal">
+                        обработку перс. данных
+                      </div>
+                    </div>
+                    <div class="form-btn__box">
+                      <button type="submit" class="btn-border btn-form last-elem">
+                        Сохранить
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- модалка Изменение данных  -->
+      <div class="modal modal-main modal-change-data">
+        <div class="overlay"></div>
+        <div class="modal-block">
+          <div class="modal-header">
+            <h3 class="title_modal">Изменение данных</h3>
+            <div class="close-modal"></div>
+          </div>
+          <div class="modal-content">
+            <div class="tabs tabs-form">
+              <div class="tabs__btn">
+                <div class="tab-btn active">Физ. лицо</div>
+                <div class="tab-btn">Юр. лицо</div>
+              </div>
+              <div class="tabs__content">
+                <div class="tab-content active">
+                  <form method="post" action="/" data-parsley-validate class="form-modal">
+                    <label class="label first-elem">
+                      <input type="text" name="name" data-parsley-trigger="change" data-parsley-required-message="Введите ФИО" class="input">
+                      <span class="placeholder-input">ФИО</span>
+                      <span class="clear-input"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm4 11.05l-1.12 1.185L8 9.185l-2.88 3.05L4 11.05 6.88 8 4 4.95l1.12-1.185L8 6.815l2.88-3.05L12 4.95 9.12 8 12 11.05z" fill="#8A8A8A"></path>
+                        </svg>
+                      </span>
+                    </label>
+                    <label class="label">
+                      <input type="text" name="phone" data-parsley-required-message="Введите контактный номер телефона" data-parsley-trigger="change" class="input phone_validate">
+                      <span class="placeholder-input">Контактный номер</span>
+                      <span class="clear-input"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm4 11.05l-1.12 1.185L8 9.185l-2.88 3.05L4 11.05 6.88 8 4 4.95l1.12-1.185L8 6.815l2.88-3.05L12 4.95 9.12 8 12 11.05z" fill="#8A8A8A"></path></svg></span>
+                    </label>
+                    <label class="label">
+                      <input type="email" name="email" data-parsley-trigger="change" data-parsley-required-message="Введите ваш Е-mail" class="input">
+                      <span class="placeholder-input">Е-mail</span>
+                      <span class="clear-input"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm4 11.05l-1.12 1.185L8 9.185l-2.88 3.05L4 11.05 6.88 8 4 4.95l1.12-1.185L8 6.815l2.88-3.05L12 4.95 9.12 8 12 11.05z" fill="#8A8A8A"/></svg></span>
+                    </label>
+                    <div class="form-agree">
+                      <span> Отправляя данные, я даю свое согласие на</span>
+                      <div data-open-modal=".modal-сonsent" class="form-agree__link js-open-modal">
+                        обработку перс. данных
+                      </div>
+                    </div>
+                    <div class="form-btn__box">
+                      <button type="submit" class="btn-border btn-form last-elem">
+                        Сохранить
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                <div class="tab-content">
+                  <form data-parsley-validate class="form-modal">
+                    <label class="label first-elem">
+                      <input type="text" name="name" data-parsley-trigger="change" data-parsley-required-message="Введите ФИО" class="input">
+                      <span class="placeholder-input">ФИО</span>
+                      <span class="clear-input"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm4 11.05l-1.12 1.185L8 9.185l-2.88 3.05L4 11.05 6.88 8 4 4.95l1.12-1.185L8 6.815l2.88-3.05L12 4.95 9.12 8 12 11.05z" fill="#8A8A8A"></path>
+                        </svg>
+                      </span>
+                    </label>
+                    <label class="label">
+                      <input type="text" name="phone" data-parsley-required-message="Введите контактный номер телефона" data-parsley-trigger="change" class="input phone_validate">
+                      <span class="placeholder-input">Контактный номер</span>
+                      <span class="clear-input"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm4 11.05l-1.12 1.185L8 9.185l-2.88 3.05L4 11.05 6.88 8 4 4.95l1.12-1.185L8 6.815l2.88-3.05L12 4.95 9.12 8 12 11.05z" fill="#8A8A8A"></path></svg></span>
+                    </label>
+                    <label class="label">
+                      <input type="email" name="email" data-parsley-trigger="change" data-parsley-required-message="Введите ваш Е-mail" class="input">
+                      <span class="placeholder-input">Е-mail</span>
+                      <span class="clear-input"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm4 11.05l-1.12 1.185L8 9.185l-2.88 3.05L4 11.05 6.88 8 4 4.95l1.12-1.185L8 6.815l2.88-3.05L12 4.95 9.12 8 12 11.05z" fill="#8A8A8A"/></svg></span>
+                    </label>
+                    <label class="label">
+                      <input type="text" name="inn" data-parsley-trigger="change" data-parsley-required-message="Введите ИНН" class="input">
+                      <span class="placeholder-input">ИНН</span>
+                      <span class="clear-input"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm4 11.05l-1.12 1.185L8 9.185l-2.88 3.05L4 11.05 6.88 8 4 4.95l1.12-1.185L8 6.815l2.88-3.05L12 4.95 9.12 8 12 11.05z" fill="#8A8A8A"></path>
+                        </svg>
+                      </span>
+                    </label>
+                    <label class="label">
+                      <input type="text" name="address" data-parsley-trigger="change" data-parsley-required-message="Введите юридический адрес" class="input">
+                      <span class="placeholder-input">Юридический адрес</span>
+                      <span class="clear-input"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm4 11.05l-1.12 1.185L8 9.185l-2.88 3.05L4 11.05 6.88 8 4 4.95l1.12-1.185L8 6.815l2.88-3.05L12 4.95 9.12 8 12 11.05z" fill="#8A8A8A"></path>
+                        </svg>
+                      </span>
+                    </label>
+                    <div class="form-agree">
+                      <span> Отправляя данные, я даю свое согласие на</span>
+                      <div data-open-modal=".modal-сonsent" class="form-agree__link js-open-modal">
+                        обработку перс. данных
+                      </div>
+                    </div>
+                    <div class="form-btn__box">
+                      <button type="submit" class="btn-border btn-form last-elem">
+                        Сохранить
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- модалка Политика конфиденциальности  -->
+      <div class="modal modal-main modal-policy">
+        <div class="overlay"></div>
+        <div class="modal-block">
+          <div class="modal-header">
+            <h3 class="title_modal">Политика конфиденциальности</h3>
+            <div class="close-modal"></div>
+          </div>
+          <div class="modal-content">
+            <div class="modal-text text-policy scroll">
+              <p>
+                Мы стремимся уважать информацию личного характера, касающуюся
+                посетителей нашего сайта. В настоящей Политике
+                конфиденциальности разъясняются некоторые из мер, которые мы
+                предпринимаем для защиты Вашей частной жизни.
+              </p>
+              <h6>Конфиденциальность информации личного характера</h6>
+              <p>
+                "Информация личного характера" обозначает любую информацию,
+                которая может быть использована для идентификации личности,
+                например, фамилия или адрес электронной почты.
+              </p>
+              <h6>Использование информации частного характера</h6>
+              <p>
+                Информация личного характера, полученная через наш сайт,
+                используется нами, среди прочего, для целей регистрирования
+                пользователей, для поддержки работы и совершенствования нашего
+                сайта, отслеживания политики и статистики пользования сайтом, а
+                также в целях, разрешенных вами.
+              </p>
+              <h6>Раскрытие информации частного характера</h6>
+              <p>
+                Мы нанимаем другие компании или связаны с компаниями, которые по
+                нашему поручению предоставляют услуги, такие как обработка и
+                доставка информации, размещение информации на данном сайте,
+                доставка содержания и услуг, предоставляемых настоящим сайтом,
+                выполнение статистического анализа. Чтобы эти компании могли
+                предоставлять эти услуги, мы можем сообщать им информацию
+                личного характера, однако им будет разрешено получать только ту
+                информацию личного характера, которая необходима им для
+                предоставления услуг. Они обязаны соблюдать конфиденциальность
+                этой информации, и им запрещено использовать ее в иных целях.
+              </p>
+              <p>
+                Мы можем использовать или раскрывать Ваши личные данные и по
+                иным причинам, в том числе, если мы считаем, что это необходимо
+                в целях выполнения требований закона или решений суда, для
+                защиты наших прав или собственности, защиты личной безопасности
+                пользователей нашего сайта или представителей широкой
+                общественности, в целях расследования или принятия мер в
+                отношении незаконной или предполагаемой незаконной деятельности,
+                в связи с корпоративными сделками, такими как разукрупнение,
+                слияние, консолидация, продажа активов или в маловероятном
+                случае банкротства, или в иных целях в соответствии с Вашим
+                согласием.
+              </p>
+              <p>
+                Мы не будем продавать, предоставлять на правах аренды или
+                лизинга наши списки пользователей с адресами электронной почты
+                третьим сторонам.
+              </p>
+              <h6>Доступ к информации личного характера</h6>
+              <p>
+                Если после предоставления информации на данный сайт, Вы решите,
+                что Вы не хотите, чтобы Ваша персональная информация
+                использовалась в каких-либо целях, связавшись с нами по
+                следующему адресу: 
+                <a href="mailto:2113190@mail.ru">2113190@mail.ru</a>  
+              </p>
+              <h6>Наша практика в отношении информации неличного характера</h6>
+              <p>
+                Мы можем собирать информацию неличного характера о Вашем
+                посещении сайта, в том числе просматриваемые вами страницы,
+                выбираемые вами ссылки, а также другие действия в связи с Вашим
+                использованием нашего сайта. Кроме того, мы можем собирать
+                определенную стандартную информацию, которую Ваш браузер
+                направляет на любой посещаемый вами сайт, такую как Ваш
+                IP-адрес, тип браузера и язык, время, проведенное на сайте, и
+                адрес соответствующего веб-сайта. Использование закладок
+                (cookies)
+              </p>
+              <p>
+                Файл cookie - это небольшой текстовый файл, размещаемый на Вашем
+                твердом диске нашим сервером. Cookies содержат информацию,
+                которая позже может быть нами прочитана. Никакие данные,
+                собранные нами таким путем, не могут быть использованы для
+                идентификации посетителя сайта. Не могут cookies использоваться
+                и для запуска программ или для заражения Вашего компьютера
+                вирусами. Мы используем cookies в целях контроля использования
+                нашего сайта, сбора информации неличного характера о наших
+                пользователях, сохранения Ваших предпочтений и другой информации
+                на Вашем компьютере с тем, чтобы сэкономить Ваше время за счет
+                снятия необходимости многократно вводить одну и ту же
+                информацию, а также в целях отображения Вашего
+                персонализированного содержания в ходе Ваших последующих
+                посещений нашего сайта. Эта информация также используется для
+                статистических исследований, направленных на корректировку
+                содержания в соответствии с предпочтениями пользователей.
+              </p>
+              <h6>Агрегированная информация</h6>
+              <p>
+                Мы можем объединять в неидентифицируемом формате предоставляемую
+                вами личную информацию и личную информацию, предоставляемую
+                другими пользователями, создавая таким образом агрегированные
+                данные. Мы планируем анализировать данные агрегированного
+                характера в основном в целях отслеживания групповых тенденций.
+                Мы не увязываем агрегированные данные о пользователях с
+                информацией личного характера, поэтому агрегированные данные не
+                могут использоваться для установления связи с вами или Вашей
+                идентификации. Вместо фактических имен в процессе создания
+                агрегированных данных и анализа мы будем использовать имена
+                пользователей. В статистических целях и в целях отслеживания
+                групповых тенденций анонимные агрегированные данные могут
+                предоставляться другим компаниям, с которыми мы взаимодействуем.
+              </p>
+              <h6>
+                Изменения, вносимые в настоящее Заявление о конфиденциальности
+              </h6>
+              <p>
+                Мы сохраняем за собой право время от времени вносить изменения
+                или дополнения в настоящую Политику конфиденциальности -
+                частично или полностью. Мы призываем Вас периодически
+                перечитывать нашу Политику конфиденциальности с тем, чтобы быть
+                информированными относительно того, как мы защищаем Вашу личную
+                информацию. С последним вариантом Политики конфиденциальности
+                можно ознакомиться путем нажатия на гипертекстовую ссылку
+                "Политика конфиденциальности", находящуюся в нижней части
+                домашней страницы данного сайта. Во многих случаях, при внесении
+                изменений в Политику конфиденциальности, мы также изменяем и
+                дату, проставленную в начале текста Политики конфиденциальности,
+                однако других уведомлений об изменениях мы можем вам не
+                направлять. Однако, если речь идет о существенных изменениях, мы
+                уведомим Вас, либо разместив предварительное заметное объявление
+                о таких изменениях, либо непосредственно направив вам
+                уведомление по электронной почте. Продолжение использования вами
+                данного сайта и выход на него означает Ваше согласие с такими
+                изменениями.
+              </p>
+              <h6>Связь с нами.</h6>
+              <p>
+                Если у Вас возникли какие-либо вопросы или предложения по поводу
+                нашего положения о конфиденциальности, пожалуйста, свяжитесь с
+                нами по следующему адресу:
+                <a href="mailto:2113190@mail.ru"> 2113190@mail.ru .</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- модалка Согласие на обработку персональных данных  -->
+      <div class="modal modal-main modal-сonsent">
+        <div class="overlay"></div>
+        <div class="modal-block">
+          <div class="modal-header">
+            <h3 class="title_modal">
+              Согласие на обработку персональных данных
+            </h3>
+            <div class="close-modal"></div>
+          </div>
+          <div class="modal-content">
+            <div class="modal-text text-policy scroll">
+              <p>
+                Настоящим свободно, своей волей и в своем интересе даю согласие
+                ООО "Альянс", которое находится по адресу:
+                <a href="bogemia-krasnoyarsk.ru">bogemia-krasnoyarsk.ru</a> , на
+                автоматизированную и неавтоматизированную обработку моих
+                персональных данных, в том числе с использованием интернет -
+                сервисов на сайте <a href="bogemia-krasnoyarsk.ru">bogemia-krasnoyarsk.ru</a>
+                 в соответствии со следующим перечнем:
+              </p>
+              <ul>
+                <li>
+                  персональные данные – номер телефона, адрес моей электронной
+                  почты, фамилия, имя, отчество;
+                </li>
+                <li>
+                  источник захода на сайт <a href="bogemia-krasnoyarsk.ru">bogemia-krasnoyarsk.ru</a> и информация поискового или рекламного запроса;
+                </li>
+                <li>
+                  данные о пользовательском устройстве (среди которых
+                  разрешение, версия и другие атрибуты, характеризующие
+                  пользовательское устройство);
+                </li>
+                <li>
+                  данные о пользовательском устройстве (среди которых
+                  разрешение, версия и другие атрибуты, характеризующие
+                  пользовательское устройство);
+                </li>
+                <li>
+                  пользовательские клики, просмотры страниц, заполнения полей,
+                  показы и просмотры баннеров и видео;
+                </li>
+                <li>данные, характеризующие аудиторные сегменты;</li>
+                <li>
+                  номер телефона, адрес моей электронной почты, фамилия, имя,
+                  отчество; параметры сессии;
+                </li>
+                <li>данные о времени посещения;</li>
+                <li>идентификатор пользователя, хранимый в cookie,</li>
+              </ul>
+              <p>
+                для целей повышения осведомленности посетителей Сайта <a href="bogemia-krasnoyarsk.ru">bogemia-krasnoyarsk.ru</a> о продуктах и услугах ООО "Альянс", предоставления релевантной
+                рекламной информации и оптимизации рекламы, исполнения
+                договорных обязательств, проведение рекламных кампаний и
+                маркетинговых исследований.<br>
+                Также даю свое согласие на предоставление ООО "Альянс" моих
+                персональных данных как посетителя Сайта <a href="bogemia-krasnoyarsk.ru">bogemia-krasnoyarsk.ru</a>, с которыми сотрудничает ООО "Альянс". ООО "Альянс" вправе
+                осуществлять обработку моих персональных данных следующими
+                способами: сбор, запись, систематизация, накопление, хранение,
+                обновление, изменение, использование, передача (распространение,
+                предоставление, доступ).<br>
+                Настоящее согласие вступает в силу с момента моего перехода на
+                Сайт <a href="bogemia-krasnoyarsk.ru">bogemia-krasnoyarsk.ru</a> и действует в течение сроков, установленных действующим
+                законодательством РФ.<br>
+                Основанием для обработки персональных данных являются: Ст. 24
+                Конституции Российской Федерации; ст.6 Федерального закона
+                №152-ФЗ «О персональных данных».
+              </p>
+              <p>
+                Персональные данные обрабатываются до окончания обработки. Так
+                же обработка персональных данных может быть прекращена по
+                запросу субъекта персональных данных.
+              </p>
+              <p>
+                Хранение персональных данных, зафиксированных на бумажных
+                носителях осуществляется согласно Федеральному закону №125-ФЗ
+                «Об архивном деле в Российской Федерации» и иным нормативно
+                правовым актам в области архивного дела и архивного хранения.
+                Срок или условие прекращения обработки персональных данных:
+                прекращение деятельности ООО "Альянс".
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- модалка Спасибо за обращение  -->
+      <div class="modal modal-main modal-thank">
+        <div class="overlay"></div>
+        <div class="modal-block">
+          <div class="modal-header">
+            <h3 class="title_modal">
+              Спасибо <br>
+              за обращение
+            </h3>
+            <div class="close-modal"></div>
+          </div>
+          <div class="modal-content">
+            <div class="modal-text">
+              В ближайшее время мы свяжемся с вами для уточнения деталей
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="title-block wrapper">
+      <div class="breadcrumb">
+        <a href="#" class="breadcrumb__link">Главная</a>
+        <span class="breadcrumb__link">Фарфор</span>
+      </div>
+      <h1 class="title-main">Коллекции</h1>
+    </div>
+    <div class="content content_collections">
+      <div class="collections__container">
+        <div class="collections-cards">
+          <a href="#" class="collections-card">
+            <div class="collections-card__img">
+              <img src="../img/collecti.jpg" alt="">
+            </div>
+            <div class="collections-card__name">Шиповник</div>
+          </a>
+          <a href="#" class="collections-card">
+            <div class="collections-card__img">
+              <img src="../img/collecti.jpg" alt="">
+            </div>
+            <div class="collections-card__name">Магнолия Грэй</div>
+          </a>
+          <a href="#" class="collections-card">
+            <div class="collections-card__img">
+              <img src="../img/collecti.jpg" alt="">
+            </div>
+            <div class="collections-card__name">Джулия Беж</div>
+          </a>
+          <a href="#" class="collections-card">
+            <div class="collections-card__img">
+              <img src="../img/collecti.jpg" alt="">
+            </div>
+            <div class="collections-card__name">Шиповник</div>
+          </a>
+          <a href="#" class="collections-card">
+            <div class="collections-card__img">
+              <img src="../img/collecti.jpg" alt="">
+            </div>
+            <div class="collections-card__name">Магнолия Грэй</div>
+          </a>
+          <a href="#" class="collections-card">
+            <div class="collections-card__img">
+              <img src="../img/collecti.jpg" alt="">
+            </div>
+            <div class="collections-card__name">Джулия Беж</div>
+          </a>
+          <a href="#" class="collections-card">
+            <div class="collections-card__img">
+              <img src="../img/collecti.jpg" alt="">
+            </div>
+            <div class="collections-card__name">Шиповник</div>
+          </a>
+          <a href="#" class="collections-card">
+            <div class="collections-card__img">
+              <img src="../img/collecti.jpg" alt="">
+            </div>
+            <div class="collections-card__name">Магнолия Грэй</div>
+          </a>
+          <a href="#" class="collections-card">
+            <div class="collections-card__img">
+              <img src="../img/collecti.jpg" alt="">
+            </div>
+            <div class="collections-card__name">Джулия Беж</div>
+          </a>
+          <a href="#" class="collections-card">
+            <div class="collections-card__img">
+              <img src="../img/collecti.jpg" alt="">
+            </div>
+            <div class="collections-card__name">Шиповник</div>
+          </a>
+          <a href="#" class="collections-card">
+            <div class="collections-card__img">
+              <img src="../img/collecti.jpg" alt="">
+            </div>
+            <div class="collections-card__name">Магнолия Грэй</div>
+          </a>
+          <a href="#" class="collections-card">
+            <div class="collections-card__img">
+              <img src="../img/collecti.jpg" alt="">
+            </div>
+            <div class="collections-card__name">Джулия Беж</div>
+          </a>
+          <a href="#" class="collections-card">
+            <div class="collections-card__img">
+              <img src="../img/collecti.jpg" alt="">
+            </div>
+            <div class="collections-card__name">Шиповник</div>
+          </a>
+          <a href="#" class="collections-card">
+            <div class="collections-card__img">
+              <img src="../img/collecti.jpg" alt="">
+            </div>
+            <div class="collections-card__name">Магнолия Грэй</div>
+          </a>
+          <a href="#" class="collections-card">
+            <div class="collections-card__img">
+              <img src="../img/collecti.jpg" alt="">
+            </div>
+            <div class="collections-card__name">Джулия Беж</div>
+          </a>
+          <a href="#" class="collections-card">
+            <div class="collections-card__img">
+              <img src="../img/collecti.jpg" alt="">
+            </div>
+            <div class="collections-card__name">Шиповник</div>
+          </a>
+          <a href="#" class="collections-card">
+            <div class="collections-card__img">
+              <img src="../img/collecti.jpg" alt="">
+            </div>
+            <div class="collections-card__name">Магнолия Грэй</div>
+          </a>
+          <a href="#" class="collections-card">
+            <div class="collections-card__img">
+              <img src="../img/collecti.jpg" alt="">
+            </div>
+            <div class="collections-card__name">Джулия Беж</div>
+          </a>
+          <a href="#" class="collections-card">
+            <div class="collections-card__img">
+              <img src="../img/collecti.jpg" alt="">
+            </div>
+            <div class="collections-card__name">Шиповник</div>
+          </a>
+          <a href="#" class="collections-card">
+            <div class="collections-card__img">
+              <img src="../img/collecti.jpg" alt="">
+            </div>
+            <div class="collections-card__name">Магнолия Грэй</div>
+          </a>
+          <a href="#" class="collections-card">
+            <div class="collections-card__img">
+              <img src="../img/collecti.jpg" alt="">
+            </div>
+            <div class="collections-card__name">Джулия Беж</div>
+          </a>
+          <a href="#" class="collections-card">
+            <div class="collections-card__img">
+              <img src="../img/collecti.jpg" alt="">
+            </div>
+            <div class="collections-card__name">Шиповник</div>
+          </a>
+          <a href="#" class="collections-card">
+            <div class="collections-card__img">
+              <img src="../img/collecti.jpg" alt="">
+            </div>
+            <div class="collections-card__name">Магнолия Грэй</div>
+          </a>
+          <a href="#" class="collections-card">
+            <div class="collections-card__img">
+              <img src="../img/collecti.jpg" alt="">
+            </div>
+            <div class="collections-card__name">Джулия Беж</div>
+          </a>
+        </div>
+        <div class="collections-filter">
+          <div class="collections-filter__box">
+            <div class="collections-filter__box-title">Австрия</div>
+            <div class="collections-filter__parameters">
+              <a href="#" class="collections-filter__param">Шиповник</a>
+              <a href="#" class="collections-filter__param">Магнолия Грэй</a>
+              <a href="#" class="collections-filter__param">Джулия Беж</a>
+              <a href="#" class="collections-filter__param">Джулия Грин</a>
+              <a href="#" class="collections-filter__param">Джулия Грэй</a>
+              <a href="#" class="collections-filter__param">Магнолия Крем</a>
+              <a href="#" class="collections-filter__param">Шиповник</a>
+              <a href="#" class="collections-filter__param">Магнолия Грэй</a>
+              <a href="#" class="collections-filter__param">Джулия Беж</a>
+              <a href="#" class="collections-filter__param">Джулия Грин</a>
+              <a href="#" class="collections-filter__param">Джулия Грэй</a>
+              <a href="#" class="collections-filter__param">Магнолия Крем</a>
+            </div>
+            <button class="btn-border collections-filter__show-btn">
+              Показать все
+            </button>
+          </div>
+          <div class="collections-filter__box">
+            <div class="collections-filter__box-title">Чехия</div>
+            <div class="collections-filter__parameters">
+              <a href="#" class="collections-filter__param">Шиповник</a>
+              <a href="#" class="collections-filter__param">Магнолия Грэй</a>
+              <a href="#" class="collections-filter__param">Джулия Беж</a>
+              <a href="#" class="collections-filter__param">Джулия Грин</a>
+              <a href="#" class="collections-filter__param">Джулия Грэй</a>
+              <a href="#" class="collections-filter__param">Магнолия Крем</a>
+              <a href="#" class="collections-filter__param">Шиповник</a>
+              <a href="#" class="collections-filter__param">Магнолия Грэй</a>
+              <a href="#" class="collections-filter__param">Джулия Беж</a>
+              <a href="#" class="collections-filter__param">Джулия Грин</a>
+              <a href="#" class="collections-filter__param">Джулия Грэй</a>
+              <a href="#" class="collections-filter__param">Магнолия Крем</a>
+            </div>
+            <button class="btn-border collections-filter__show-btn">
+              Показать все
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer-top">
+        <ul class="footer-nav">
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link"> Сертификаты </a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link"> Подарочные карты </a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link"> Оплата и доставка </a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link"> Обмен и возврат </a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link"> Рассрочка </a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link"> Контакты </a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link"> Специальные предложения </a>
+          </li>
+        </ul>
+        <div class="footer-social">
+          <a href="#" class="footer-social__link">
+            <img src="../img/instagram-icon.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="footer-center">
+        <div class="footer-contacts">
+          <div class="footer-contacts__phone">
+            <a href="tel:+73912113190" class="footer-contact">
+              <img src="../img/phone-icon.svg" alt="">
+              <span>+7 (391) 2113190 – МАГАЗИН</span>
+            </a>
+            <a href="tel:+73912884526" class="footer-contact">
+              <img src="../img/phone-icon.svg" alt="">
+              <span>+7 (391) 2884526 – ПАРКОВКА</span>
+            </a>
+          </div>
+          <div class="footer-contacts__time">
+            <div class="footer-contact">
+              <img src="../img/time-icon.svg" alt="">
+              <span>с 10:00 до 20:00 ежедневно</span>
+            </div>
+            <div class="footer-contact">
+              <img src="../img/location-icon.svg" alt="">
+              <span>Красноярск, Дикт. Пролетариата 20</span>
+            </div>
+          </div>
+          <div class="footer-contacts__email">
+            <a href="mailto:2113190@mail.ru" class="footer-contact footer-contact_email">
+              <img src="../img/email-icon.svg" alt="">
+              <span>2113190@mail.ru</span>
+            </a>
+            <a href="#" class="footer-contact footer-contact_viber">
+              <img src="../img/viber-icon.png" alt="">
+              <img src="../img/whatsapp-icon.png" alt="">
+              <span>89048957249</span>
+            </a>
+          </div>
+        </div>
+        <div class="payment">
+          <div class="payment-text">Принимаем к оплате:</div>
+          <div class="payment__row">
+            <div class="payment-link">
+              <img src="../img/mir.svg" alt="">
+            </div>
+            <div class="payment-link">
+              <img src="../img/visa.svg" alt="">
+            </div>
+            <div class="payment-link">
+              <img src="../img/mastercard.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-row">
+          <div class="copyright">
+            2021 © Магазин чешской посуды из фарфора и предметов интерьера
+            Богемия
+          </div>
+          <a rel="nofollow" href="https://websalt.ru" target="_blank" class="developers">
+            Создание сайта
+            <img src="../img/sol.png" alt="">
+          </a>
+        </div>
+        <div class="footer-politics">
+          <div data-open-modal=".modal-policy" class="footer-link js-open-modal">
+            Политика конфиденциальности
+          </div>
+          <div data-open-modal=".modal-сonsent" class="footer-link js-open-modal">
+            Согласие на обработку персональных данных
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/jquery.nicescroll.min.js"></script>
+    <script src="../js/jquery.fancybox.min.js"></script>
+    <script src="../js/jquery.nice-select.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/jquery.maskedinput.min.js"></script>
+    <script src="../js/parsley.js"></script>
+    <script async src="https://usocial.pro/usocial/usocial.js?uid=b8ad70e264f53798&v=6.1.5" data-script="usocial" charset="utf-8"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

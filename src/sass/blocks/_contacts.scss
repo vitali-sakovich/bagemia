@@ -1,0 +1,149 @@
+.content_contacts {
+  padding-top: 41px;
+}
+.constacts__container {
+  display: flex;
+}
+.map {
+  width: 42.188vw;
+  height: 319px;
+  margin-bottom: 2px;
+}
+
+.location {
+  width: 42.188vw;
+  position: relative;
+}
+.location-img {
+  width: 100%;
+}
+.location-arrow {
+  position: absolute;
+  right: 143px;
+  bottom: 81px;
+}
+.contacts-map {
+  margin-right: 40px;
+}
+.contact {
+  display: flex;
+  margin-bottom: 20px;
+}
+.contact-name {
+  display: flex;
+}
+.contact-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  min-width: 20px;
+  margin-right: 13px;
+}
+.contact:first-child .contact-img{
+  align-items: flex-start;
+}
+.contact-name span {
+  display: flex;
+  min-width: 122px;
+  margin-right: 11px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+.contact-link {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+.contact-link:link {
+  color: #000000;
+}
+a.contact-link:hover {
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+.requisites {
+  padding-left: 33px;
+}
+.contacts {
+  margin-bottom: 45px;
+}
+.requisites-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 26px;
+}
+.requisite {
+  display: none;
+  margin-bottom: 20px;
+}
+.requisite:nth-child(-n + 2) {
+  display: flex;
+}
+.requisite-name {
+  display: block;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000;
+  min-width: 82px;
+  margin-right: 53px;
+}
+.requisite-value {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000;
+}
+.spoiler {
+  display: flex;
+  justify-content: flex-start;
+  width: max-content;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #525252;
+  border-bottom: 1px dashed #000000;
+  cursor: pointer;
+  margin-bottom: 35px;
+  transition: border-bottom 0.3s;
+}
+.spoiler:hover {
+  border-bottom: 1px dashed #f8f2e0;
+  transition: border-bottom 0.3s;
+}
+.download {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.download:link {
+  color: #000;
+}
+.download-icon {
+  margin-right: 12px;
+}
+.download-name {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  padding-right: 12px;
+}
+.download-size {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #858585;
+}
+.download:hover .download-name{
+  color: #858585;
+  transition: color 0.3s;
+}

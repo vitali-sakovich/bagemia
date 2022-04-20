@@ -1,0 +1,119 @@
+.content_installment {
+  padding-top: 40px;
+}
+.banner-installment {
+  display: flex;
+  max-width: 1375px;
+  margin-bottom: 69px;
+}
+.banner-installment img {
+  width: 100%;
+}
+.installment__conatiner {
+  display: flex;
+  max-width: 1375px;
+}
+.installment__block {
+  padding-right: 78px;
+  width: 47.656vw;
+  max-width: 802px;
+}
+.installment-desc {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+  margin-bottom: 64px;
+}
+.installment-desc p {
+  margin-bottom: 20px;
+}
+.installment-desc p:last-child {
+  margin-bottom: 0;
+}
+.installment-desc a:link {
+  color: #000;
+  text-decoration: none;
+}
+.installment-terms {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #e0cd9f;
+  height: 144px;
+  padding: 20px 20px 22px 23px;
+  margin-bottom: 77px;
+}
+.installment-terms__period {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+}
+.installment-terms__price {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+  color: #000;
+}
+
+.installment-benefits {
+  display: flex;
+  flex-flow: row wrap;
+}
+.installment-benefits__box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-left: 50px;
+  width: calc(100% / 2 - 31px);
+  margin-right: 62px;
+  margin-bottom: 18px;
+}
+.installment-benefits__box:nth-child(2n) {
+  margin-right: 0;
+}
+.installment-benefits__icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.installment-benefits__name {
+  display: block;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+  margin-bottom: 5px;
+  min-height: 42px;
+}
+.installment-benefits__text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+.form-block {
+  display: flex;
+  flex-direction: column;
+  background: #eaddc1;
+  padding: 42px 33px 59px 40px;
+  width: 35.703vw;
+  max-width: 573px;
+  height: 100%;
+}
+.form-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000;
+  margin-bottom: 55px;
+}
+.form .radio-label {
+  margin-bottom: 16px;
+}
+.form .radio-box {
+  margin-bottom: 31px;
+}
+.form .form-agree {
+  margin-bottom: 32px;
+}

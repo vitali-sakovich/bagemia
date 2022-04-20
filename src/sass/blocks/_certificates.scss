@@ -1,0 +1,71 @@
+.content_certificates {
+  padding-top: 44px;
+}
+.certificates__conatiner {
+  display: flex;
+}
+.certificates-form {
+  width: 573px;
+  padding: 42px 56px 58px 60px;
+  margin-right: 87px;
+}
+.certificates-form .form-title {
+  margin-bottom: 27px;
+}
+.form-text {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  color: #000000;
+  margin-bottom: 40px;
+}
+.form-text a,
+.form-text a:link {
+  color: #000000;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+.form-text a:hover {
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+.certificates-form .radio-box {
+  display: flex;
+  flex-flow: row wrap;
+}
+.radio-box_price .radio-label {
+  min-width: 95px;
+  margin-right: 31px;
+}
+.form .radio-box_price {
+  margin-bottom: 24px;
+}
+.radio-box_payment .radio-label {
+  margin-right: 36px;
+}
+.form .radio-box_payment {
+  margin-bottom: 15px;
+}
+.certificates-desc {
+  padding-top: 10px;
+}
+.certificates-desc .gift-cards__img-text img {
+  width: 347px;
+  margin-bottom: 30px;
+}
+.certificates-desc .gift-cards__price-row {
+  flex-flow: row wrap;
+  max-width: 250px;
+  margin-bottom: 20px;
+}
+.certificates-desc .gift-cards__price {
+  margin-bottom: 10px;
+}
+.certificates-desc .gift-cards__text {
+  margin-bottom: 31px;
+  max-width: 264px;
+}
+.certificates-desc .gift-cards__img {
+  margin-right: 0;
+  width: 371px;
+}
